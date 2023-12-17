@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+    <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+    
+    <!-- STRENGTH -->
+    <div class="major-skills-row">
+
+        <button id="levelup-button">Level Up</button>
+
+        <div id="minor-strength">
+
+            <div class="minor-row">
+                <h3>Blade:</h3>
+                <button class="minus-minorSTR-button" id="BLADE-minus">-</button>
+                <input type="text" disabled="disabled" id="BLADE-value" value="0">
+                <button class="plus-minorSTR-button" id="BLADE-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Blunt:</h3>
+                <button class="minus-minorSTR-button" id="BLUNT-minus">-</button>
+                <input type="text" disabled="disabled" id="BLUNT-value" value="0">
+                <button class="plus-minorSTR-button" id="BLUNT-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3 class="minor-skill">Hand to Hand:</h3>
+                <button class="minus-minorSTR-button" id="HANDTOHAND-minus">-</button>
+                <input type="text" disabled="disabled" id="HANDTOHAND-value" value="0">
+                <button class="plus-minorSTR-button" id="HANDTOHAND-plus">+</button>
+            </div>
+
+        </div>
+
+        <div id="major-row">
+            <h1>Strength:</h1>
+            <input value="0" disabled="disabled" id="STR-value">
+        </div>
+
+    </div>
+
+    <!-- INTELLIGENCE -->
+    <div class="major-skills-row">
+        
+        <div id="minor-strength">
+            
+            <div class="minor-row">
+                <h3>Alchemy:</h3>
+                <button class="minus-minorINT-button" id="ALCHEMY-minus">-</button>
+                <input type="text" disabled="disabled" id="ALCHEMY-value" value="0">
+                <button class="plus-minorINT-button" id="ALCHEMY-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Conjuration:</h3>
+                <button class="minus-minorINT-button" id="CONJURATION-minus">-</button>
+                <input type="text" disabled="disabled" id="CONJURATION-value" value="0">
+                <button class="plus-minorINT-button" id="CONJURATION-plus">+</button>
+
+            </div>
+
+            <div class="minor-row">
+                <h3>Mysticism:</h3>
+                <button class="minus-minorINT-button" id="MYSTICISM-minus">-</button>
+                <input type="text" disabled="disabled" id="MYSTICISM-value" value="0">
+                <button class="plus-minorINT-button" id="MYSTICISM-plus">+</button>
+
+            </div>
+
+        </div>
+
+        <div id="major-row">
+            <h1 class="major-skill">Intelligence:</h1>
+            <input value="0" disabled="disabled" id="INT-value">
+        </div>
+
+    </div>
+
+    <!-- WILLPOWER -->
+    <div class="major-skills-row">
+        <div id="minor-strength">
+            <div class="minor-row">
+                <h3>Alteration:</h3>
+                <button class="minus-minorWIL-button" id="ALTERATION-minus">-</button>
+                <input type="text" disabled="disabled" id="ALTERATION-value" value="0">
+                <button class="plus-minorWIL-button" id="ALTERATION-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Destruction:</h3>
+                <button class="minus-minorWIL-button" id="DESTRUCTION-minus">-</button>
+                <input type="text" disabled="disabled" id="DESTRUCTION-value" value="0">
+                <button class="plus-minorWIL-button" id="DESTRUCTION-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Restoration:</h3>
+                <button class="minus-minorWIL-button" id="RESTORATION-minus">-</button>
+                <input type="text" disabled="disabled" id="RESTORATION-value" value="0">
+                <button class="plus-minorWIL-button" id="RESTORATION-plus">+</button>
+            </div>
+
+        </div>
+
+        <div id="major-row">
+            <h1 class="major-skill">Willpower:</h1>
+            <input value="0" disabled="disabled" id="WIL-value">
+        </div>
+
+    </div>
+
+    <!-- AGILITY -->
+    <div class="major-skills-row">
+        <div id="minor-strength">
+            <div class="minor-row">
+                <h3>Marksman:</h3>
+                <button class="minus-minorAGI-button" id="MARKSMAN-minus">-</button>
+                <input type="text" disabled="disabled" id="MARKSMAN-value" value="0">
+                <button class="plus-minorAGI-button" id="MARKSMAN-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Security:</h3>
+                <button class="minus-minorAGI-button" id="SECURITY-minus">-</button>
+                <input type="text" disabled="disabled" id="SECURITY-value" value="0">
+                <button class="plus-minorAGI-button" id="SECURITY-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Sneak:</h3>
+                <button class="minus-minorAGI-button" id="SNEAK-minus">-</button>
+                <input type="text" disabled="disabled" id="SNEAK-value" value="0">
+                <button class="plus-minorAGI-button" id="SNEAK-plus">+</button>
+            </div>
+
+        </div>
+
+        <div id="major-row">
+            <h1 class="major-skill">Agiltiy:</h1>
+            <input value="0" disabled="disabled" id="AGI-value">
+        </div>
+
+    </div>
+
+    <!-- SPEED -->
+    <div class="major-skills-row">
+        <div id="minor-strength">
+            <div class="minor-row">
+                <h3>Athletics:</h3>
+                <button class="minus-minorSPE-button" id="ATHLETICS-minus">-</button>
+                <input type="text" disabled="disabled" id="ATHLETICS-value" value="0">
+                <button class="plus-minorSPE-button" id="ATHLETICS-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Acrobatics:</h3>
+                <button class="minus-minorSPE-button" id="ACROBATICS-minus">-</button>
+                <input type="text" disabled="disabled" id="ACROBATICS-value" value="0">
+                <button class="plus-minorSPE-button" id="ACROBATICS-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Light Armor:</h3>
+                <button class="minus-minorSPE-button" id="LIGHTARMOR-minus">-</button>
+                <input type="text" disabled="disabled" id="LIGHTARMOR-value" value="0">
+                <button class="plus-minorSPE-button" id="LIGHTARMOR-plus">+</button>
+
+            </div>
+
+        </div>
+
+        <div id="major-row">
+            <h1 class="major-skill">Speed:</h1>
+            <input value="0" disabled="disabled" id="SPE-value">
+        </div>
+
+    </div>
+
+    <!-- ENDURANCE -->
+    <div class="major-skills-row">
+        <div id="minor-strength">
+            <div class="minor-row">
+                <h3>Block:</h3>
+                <button class="minus-minorEND-button" id="BLOCK-minus">-</button>
+                <input type="text" disabled="disabled" id="BLOCK-value" value="0">
+                <button class="plus-minorEND-button" id="BLOCK-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Armorer:</h3>
+                <button class="minus-minorEND-button" id="ARMORER-minus">-</button>
+                <input type="text" disabled="disabled" id="ARMORER-value" value="0">
+                <button class="plus-minorEND-button" id="ARMORER-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Heavy Armor:</h3>
+                <button class="minus-minorEND-button" id="HEAVYARMOR-minus">-</button>
+                <input type="text" disabled="disabled" id="HEAVYARMOR-value" value="0">
+                <button class="plus-minorEND-button" id="HEAVYARMOR-plus">+</button>
+            </div>
+
+        </div>
+
+        <div id="major-row">
+            <h1 class="major-skill">Endurance:</h1>
+            <input value="0" disabled="disabled" id="END-value">
+        </div>
+
+    </div>
+
+    <!-- PERSONALITY -->
+    <div class="major-skills-row">
+        <div id="minor-strength">
+            <div class="minor-row">
+                <h3>Mercantile:</h3>
+                <button class="minus-minorPER-button" id="MERCANTILE-minus">-</button>
+                <input type="text" disabled="disabled" id="MERCANTILE-value" value="0">
+                <button class="plus-minorPER-button" id="MERCANTILE-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Speechcraft:</h3>
+                <button class="minus-minorPER-button" id="SPEECHCRAFT-minus">-</button>
+                <input type="text" disabled="disabled" id="SPEECHCRAFT-value" value="0">
+                <button class="plus-minorPER-button" id="SPEECHCRAFT-plus">+</button>
+            </div>
+
+            <div class="minor-row">
+                <h3>Illusion:</h3>
+                <button class="minus-minorPER-button" id="ILLUSION-minus">-</button>
+                <input type="text" disabled="disabled" id="ILLUSION-value" value="0">
+                <button class="plus-minorPER-button" id="ILLUSION-plus">+</button>
+            </div>
+
+        </div>
+
+        <div id="major-row">
+            <h1 class="major-skill">Personality:</h1>
+            <input value="0" disabled="disabled" id="PER-value">
+        </div>
+
+    </div>
+</body>
+</html>

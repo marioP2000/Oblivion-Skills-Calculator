@@ -1,0 +1,119 @@
+* {
+    font-family: "PT Serif", sans-serif;
+    color: #593213;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #E4CBA2;
+}
+
+.major-skills-row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background: #E4CBA2;
+    padding: 0 2.5%;
+    border: solid 2px #593213;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+#minor-strength {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.minor-row {
+    justify-content: space-between;
+    margin-top: 2%;
+    width: 100%;
+    border: solid 1px #593213;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+}
+
+.minor-row:nth-child(3) {
+    border-bottom: none;
+}
+
+input {
+    font-weight: bold;
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    width: 25%;
+    color: black;
+    text-align: center;
+}
+
+#major-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin-right: 25%;
+}
+
+button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #755134;
+    cursor: pointer;
+    transition: 0.1s;
+    margin: 0 3%;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+#levelup-button {
+    position: absolute;
+    top: 5%;
+    right: 1%;
+    border-radius: 6px;
+    padding: 0.25%;
+    font-size: 2.5rem;
+    background: #593213;
+    color: #E4CBA2;
+    margin-right: 0%;
+}
+
+#levelup-button:active {
+    transform: scale(1);
+}
+
+@media (max-width: 1200px) {
+    #major-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        margin-right: 10%;
+    }
+  }
+
+@media (max-width: 800px) {
+    #major-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 60%;
+        margin-right: 5%;
+    }
+  }
+  
